@@ -13,7 +13,7 @@ body {
 }
 
 .content h1 {
-    font-size: 2.2rem;
+    font-size: 3.2rem;
     margin-bottom: 15px;
     color: #ffffff;
 }
@@ -57,7 +57,7 @@ nav a::after {
     bottom: 0;
     width: 0%;
     height: 2px;
-    background: #560b0b;
+    background: #0b0b56;
     transition: 0.3s ease;
 }
 
@@ -66,7 +66,7 @@ nav a:hover::after {
 }
 
 .btn {
-    background: linear-gradient(135deg, #570808, #670909);
+    background: linear-gradient(135deg, #110857, #2d0967);
     border: none;
     padding: 8px 18px;
     border-radius: 20px;
@@ -78,33 +78,33 @@ nav a:hover::after {
 
 .btn:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 10px #4e3135;
+    box-shadow: 0 0 10px #1822a6;
 }
 
 main {
-    position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
     min-height: calc(90vh - 6rem);
-    overflow: hidden;
+    padding: 0 6%;
 }
 
 .content {
-    max-width: 27rem;
-    margin-left: 6%;
+    max-width: 500px;
     z-index: 2;
-    position: relative;
 }
 
-.globo {
-    position: absolute;
-    top: 52%;
-    right: 7%;
-    transform: translateY(-50%);
-    z-index: 1;
-    pointer-events: none;
-    width: 600px;
-    height: 600px;
-    opacity: 0.9;
+.img-saude {
+    width: 641px;
+    max-width: 102%;
+    height: auto;
+}
+
+.destaque {
+    color: #101668;
+}
+
+.lolo {
+    height: 82px;
+    width: 10px;
 }
