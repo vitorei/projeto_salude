@@ -1,38 +1,283 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Saúde Tiradentes</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <header>
-        <img class="lolo" src="img/ChatGPT Image 30 de abr. de 2026, 20_51_37.png" alt="">
-        <nav>
-            <ul>
-                <li><a href="">chat</a></li>
-                <li><a href="">saude</a></li>
-                <li><a href="">mapa</a>
-                    <a href="cadastro.html">
-                        <li><button class="btn">Cadastro</button></li>
-                    </a>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <div class="content">
+        <div class="logo-area">
 
-            <h1>Cuide da sua <span class="destaque">saúde</span> com informação</h1>
-            <p>
-                Nosso objetivo é facilitar o acesso à informação de saúde, ajudando você a cuidar melhor do seu bem-estar com conteúdos confiáveis, simples e atualizados.
-            </p>
+            <img class="logo" src="img/ChatGPT Image 30 de abr. de 2026, 20_51_37.png" alt="logo">
+
+            <div>
+                <h2>Saúde Tiradentes</h2>
+                <p>Cuidando da nossa cidade</p>
+            </div>
+
         </div>
-        <img src="img/img_png-saude.png" class="img-saude">
-    </main>
+
+        <nav>
+
+            <a href="">Início</a>
+            <a href="">Saúde</a>
+            <a href="">Mapa</a>
+            <a href="">Chat Saúde</a>
+
+        </nav>
+
+        <div class="header-buttons">
+
+            <button class="btn-login">Entrar</button>
+
+           <a href="cadastro.html"><button class="btn-cadastro">
+                Cadastro
+            </button></a>
+
+        </div>
+
+    </header>
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h1>
+                Saúde que
+                <span>cuida de você</span>,
+                saúde que cuida da nossa cidade.
+            </h1>
+
+            <p>
+                O portal Saúde Tiradentes conecta você aos serviços
+                de saúde da cidade com praticidade, informação
+                e acolhimento.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="btn-primary">
+                    Acessar Serviços
+                </button>
+
+                <button class="btn-outline">
+                    Ver no mapa
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="img/img_png-saude.png" alt="cidade">
+
+        </div>
+
+    </section>
+    <section class="acesso">
+
+        <div class="acesso-title">
+
+            <h1>Acesso <span>rápido</span></h1>
+
+            <p>
+                Encontre o que você precisa rapidamente.
+            </p>
+
+        </div>
+
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="img/user-round.png" alt="">
+                <h2>Cadastro</h2>
+
+                <p>
+                    Crie sua conta e tenha acesso aos serviços.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="img/message-circle.png" alt="">
+                <h2>Chat Saúde</h2>
+
+                <p>
+                    Converse com profissionais de saúde.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="img/heart-handshake.png" alt="">
+                <h2>Serviços</h2>
+
+                <p>
+                    Consultas, exames e informações.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="img/map-pin.png" alt="">
+                <h2>Mapa</h2>
+
+                <p>
+                    Encontre unidades próximas.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="services">
+
+        <h1>Serviços de <span> Saúde </span></h1>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+                <h2>Agendamentos</h2>
+
+                <p>
+                    Agende consultas online.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h2>Exames</h2>
+
+                <p>
+                    Consulte resultados de exames.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h2>Medicamentos</h2>
+
+                <p>
+                    Veja disponibilidade de remédios.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h2>Vacinação</h2>
+
+                <p>
+                    Confira campanhas e locais.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h2>Informações</h2>
+
+                <p>
+                    Notícias e avisos importantes.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="chat-mapa">
+
+        <div class="chat-box">
+
+            <h1>Chat Saúde</h1>
+
+            <div class="mensagem bot">
+                Olá! Como posso ajudar?
+            </div>
+
+            <div class="mensagem user">
+                Quero encontrar uma UBS próxima.
+            </div>
+
+        </div>
+
+        <div class="mapa-box">
+
+            <h1>Mapa da Saúde</h1>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d236224.07204520752!2d-44.2655226!3d-21.1104366"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+
+        </div>
+        <section class="cta">
+
+            <h1>
+                Faça seu cadastro e tenha acesso
+                aos serviços de saúde.
+            </h1>
+    
+            <button class="btn-primary">
+                Fazer Cadastro
+            </button>
+    
+        </section>
+
+    </section>
+
+
+    <footer>
+
+        <div class="footer-grid">
+
+            <div>
+
+                <h2>Saúde Tiradentes</h2>
+
+                <p>
+                    Portal oficial de saúde da cidade.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h2>Navegação</h2>
+
+                <p>Início</p>
+                <p>Saúde</p>
+                <p>Mapa</p>
+                <p>Cadastro</p>
+
+            </div>
+
+            <div>
+
+                <h2>Serviços</h2>
+
+                <p>Exames</p>
+                <p>Vacinação</p>
+                <p>Medicamentos</p>
+
+            </div>
+
+            <div>
+
+                <h2>Contato</h2>
+
+                <p>(11) 99999-9999</p>
+
+                <p>
+                    saude@tiradentes.com
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
 
 </body>
 
