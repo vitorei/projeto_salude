@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.btn-login {
+    background: #2563EB;
+    border: none;
+    color: white;
+    padding: 17px 35px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+}
+
+.btn-login:hover {
+    background: #1D4ED8;
+    transform: translateY(-3px);
+}
+
+.btn-cadastro {
+    background: transparent;
+    border: 1px solid #4b5563;
+    color: white;
+    padding: 17px 35px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.btn-cadastro:hover {
+    border-color: #2563EB;
+    background: rgba(37, 99, 235, 0.1);
+}
+
+body {
+    background: #000;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    background: #000;
+    border-bottom: 1px solid #1f2937;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 65px;
+}
+
+.logo-area h2 {
+    color: white;
+}
+
+.logo-area p {
+    color: #9ca3af;
+    font-size: 13px;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+
+nav a:hover,
+.active {
+    color: #2563EB;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-login {
+    background: transparent;
+    border: 1px solid #374151;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-cadastro {
+    background: #2563EB;
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.chat-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 120px 2%;
+    display: grid;
+    grid-template-columns: 300px 1fr 320px;
+    gap: 25px;
+    background: radial-gradient(circle at center, #0f172a, #000);
+}
+
+.sidebar,
+.chat-area,
+.info-panel {
+    background: rgba(17, 24, 39, 0.8);
+    border: 1px solid #1f2937;
+    border-radius: 30px;
+    backdrop-filter: blur(15px);
+}
+
+.sidebar {
+    padding: 25px;
+}
+
+.sidebar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.sidebar-top h1 {
+    color: white;
+    font-size: 28px;
+}
+
+.sidebar-top button {
+    width: 45px;
+    height: 45px;
+    border: none;
+    background: #2563EB;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.chat-list {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 18px;
+    border-radius: 18px;
+    margin-bottom: 15px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.chat-list:hover {
+    background: rgba(37, 99, 235, 0.1);
+}
+
+.active-chat {
+    background: #2563EB;
+}
+
+.chat-list img {
+    width: 55px;
+    background: #0f172a;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.chat-list h2 {
+    color: white;
+    font-size: 18px;
+}
+
+.chat-list p {
+    color: #d1d5db;
+    margin-top: 5px;
+}
+
+.secure-box {
+    margin-top: 40px;
+    background: linear-gradient(135deg, #2563EB, #1D4ED8);
+    border-radius: 25px;
+    padding: 25px;
+}
+
+.secure-box h2 {
+    color: white;
+}
+
+.secure-box p {
+    color: #dbeafe;
+    margin-top: 10px;
+    line-height: 28px;
+}
+
+.chat-area {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chat-top {
+    padding: 25px;
+    border-bottom: 1px solid #1f2937;
+}
+
+.chat-user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.chat-user img {
+    width: 60px;
+    background: #0f172a;
+    padding: 10px;
+    border-radius: 18px;
+}
+
+.chat-user h2 {
+    color: white;
+}
+
+.chat-user span {
+    color: #22c55e;
+    font-size: 14px;
+}
+
+.messages {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.message {
+    max-width: 500px;
+    padding: 22px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    line-height: 30px;
+}
+
+.bot {
+    background: #111827;
+    color: white;
+}
+
+.user {
+    background: #2563EB;
+    color: white;
+    margin-left: auto;
+}
+
+.quick-buttons {
+    padding: 0 30px 25px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.quick-buttons button {
+    background: transparent;
+    border: 1px solid #374151;
+    color: white;
+    padding: 14px 22px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.quick-buttons button:hover {
+    border-color: #2563EB;
+    background: rgba(37, 99, 235, 0.1);
+}
+
+.chat-input {
+    padding: 25px;
+    border-top: 1px solid #1f2937;
+    display: flex;
+    gap: 15px;
+}
+
+.chat-input input {
+    flex: 1;
+    height: 60px;
+    border: none;
+    outline: none;
+    border-radius: 18px;
+    padding: 0 20px;
+    background: #111827;
+    color: white;
+    font-size: 16px;
+}
+
+.chat-input button {
+    width: 60px;
+    border: none;
+    background: #2563EB;
+    color: white;
+    border-radius: 18px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.info-panel {
+    padding: 25px;
+}
+
+.info-panel h1 {
+    color: white;
+    margin-bottom: 25px;
+}
+
+.info-card {
+    background: #111827;
+    border-radius: 22px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.info-card h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    color: #d1d5db;
+}
+
+.info-card span {
+    color: #2563EB;
+    display: block;
+    margin-top: 8px;
+}
+
+.help-box {
+    margin-top: 30px;
+    background: linear-gradient(135deg, #2563EB, #1D4ED8);
+    border-radius: 25px;
+    padding: 30px;
+    text-align: center;
+}
+
+.help-box h2 {
+    color: white;
+}
+
+.help-box p {
+    color: #dbeafe;
+    margin-top: 15px;
+    line-height: 28px;
+}
+
+.help-box button {
+    width: 100%;
+    margin-top: 25px;
+    height: 55px;
+    border: none;
+    border-radius: 15px;
+    background: white;
+    color: #2563EB;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media(max-width:1200px) {
+    .chat-container {
+        grid-template-columns: 1fr;
+    }
+    .info-panel {
+        display: none;
+    }
+}
+
+@media(max-width:700px) {
+    nav,
+    .header-buttons,
+    .sidebar {
+        display: none;
+    }
+    .chat-container {
+        padding: 110px 4%;
+    }
+}

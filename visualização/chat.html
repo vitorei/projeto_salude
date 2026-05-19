@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Saúde Tiradentes</title>
+
+    <link rel="stylesheet" href="chat.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo-area">
+            <div>
+                <h2>Saúde Tiradentes</h2>
+                <p>Chat de Atendimento</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Chat</a>
+            <a href="#">Mapa</a>
+            <a href="#" class="active">Suporte</a>
+        </nav>
+
+        <div class="header-buttons">
+            <button class="btn-login">Entrar</button>
+            <button class="btn-cadastro">Cadastro</button>
+        </div>
+
+    </header>
+
+    <section class="chat-container">
+
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+
+            <div class="sidebar-top">
+                <h1>Chats</h1>
+                <button>+</button>
+            </div>
+
+            <div class="chat-list active-chat">
+                <div>
+                    <h2>Assistente Saúde</h2>
+                    <p>Online agora</p>
+                </div>
+            </div>
+
+            <div class="chat-list">
+                <div>
+                    <h2>Agendamentos</h2>
+                    <p>Consultas</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- CHAT -->
+        <div class="chat-area">
+
+            <div class="chat-top">
+                <div class="chat-user">
+                    <div>
+                        <h2>Assistente Saúde</h2>
+                        <span>Online</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MENSAGENS -->
+            <div class="messages" id="messages">
+
+                <div class="message bot">
+                    👋 Olá! Sou o Assistente de Saúde de Tiradentes.<br> Como posso te ajudar hoje?
+                </div>
+
+            </div>
+
+            <!-- BOTÕES RÁPIDOS -->
+            <div class="quick-buttons">
+                <button onclick="quick('consulta')">Consulta</button>
+                <button onclick="quick('vacina')">Vacina</button>
+                <button onclick="quick('exames')">Exames</button>
+                <button onclick="quick('horario')">Horário</button>
+                <button onclick="quick('emergencia')">Emergência</button>
+            </div>
+
+            <!-- INPUT -->
+            <div class="chat-input">
+
+                <input id="input" type="text" placeholder="Digite sua mensagem...">
+
+                <button onclick="send()">➤</button>
+
+            </div>
+
+        </div>
+
+        <!-- INFO -->
+        <div class="info-panel">
+
+            <h1>Informações</h1>
+
+            <div class="info-card">
+                <h2>Horário</h2>
+                <p>Segunda a Sexta</p>
+                <span>07h às 17h</span>
+            </div>
+
+            <div class="info-card">
+                <h2>Emergência</h2>
+                <p>SAMU</p>
+                <span>192</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="chats.js"></script>
+
+</body>
+
+</html>

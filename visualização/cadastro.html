@@ -4,42 +4,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Login Saúde Tiradentes</title>
     <link rel="stylesheet" href="cadastro.css">
 </head>
 
 <body>
+
     <header>
-        <div class="logo">Saúde+</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-        <button class="btn">Entrar</button>
-    </header>
 
-    <div class="container">
+        <div class="logo-area">
 
-        <div class="card">
+            <img class="logo" src="img/ChatGPT Image 30 de abr. de 2026, 20_51_37.png" alt="logo">
 
-            <h1>Criar conta</h1>
-            <p>Faça seu cadastro para continuar</p>
-
-            <form class="form">
-                <input type="text" placeholder="Nome completo">
-                <input type="email" placeholder="E-mail">
-                <input type="password" placeholder="Senha">
-                <input type="password" placeholder="Confirmar senha">
-
-                <button class="btn">Cadastrar</button>
-            </form>
+            <div>
+                <h2>Saúde Tiradentes</h2>
+                <p>Cuidando da nossa cidade</p>
+            </div>
 
         </div>
 
-    </div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="">Serviços</a>
+            <a href="">Mapa</a>
+            <a href="">Contato</a>
+        </nav>
+
+        <div class="header-buttons">
+            <button class="btn-login">Entrar</button>
+            <button class="btn-cadastro">Cadastro</button>
+        </div>
+
+    </header>
+
+    <section class="login-section">
+
+        <div class="left-login">
+
+            <span>Bem-vindo de volta!</span>
+
+            <h1>
+                Acesse sua conta
+                <span class="blue">Saúde Tiradentes</span>
+            </h1>
+
+            <p>
+                Faça login para acessar consultas, exames, medicamentos e serviços da plataforma.
+            </p>
+
+            <div class="info-box">
+
+                <div class="info-card">
+                    <img src="img/shield.png" alt="">
+                    <div>
+                        <h2>Acesso seguro</h2>
+                        <p>Seus dados protegidos</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <img src="img/clock.png" alt="">
+                    <div>
+                        <h2>Atendimento rápido</h2>
+                        <p>Disponível 24 horas</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <img src="img/chart.png" alt="">
+                    <div>
+                        <h2>Serviços inteligentes</h2>
+                        <p>Facilidade para você</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="login-box">
+
+            <img class="login-icon" src="img/logo.png" alt="">
+
+            <h1>Entrar na conta</h1>
+
+            <p>
+                Preencha seus dados para continuar
+            </p>
+
+            <form>
+
+                <div class="input-box">
+                    <input type="email" placeholder="Seu e-mail">
+                </div>
+
+                <div class="input-box">
+                    <input type="password" placeholder="Sua senha">
+                </div>
+
+                <div class="remember">
+
+                    <label>
+                        <input type="checkbox">
+                        Lembrar de mim
+                    </label>
+
+                    <a href="">Esqueceu sua senha?</a>
+
+                </div>
+
+                <button class="btn-entrar">
+                    Entrar
+                </button>
+
+            </form>
+
+            <div class="line"></div>
+
+            <div class="social-login">
+
+                <button>Google</button>
+
+                <button>Microsoft</button>
+
+            </div>
+
+            <span class="register">
+                Ainda não tem conta?
+                <a href="">Cadastrar agora</a>
+            </span>
+
+        </div>
+
+    </section>
 
 </body>
 

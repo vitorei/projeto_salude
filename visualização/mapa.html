@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Segurança</title>
+    <link rel="stylesheet" href="mapa.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <div class="logo-icon"></div>
+            <div>
+                <h2>SafeZone</h2>
+                <p>Sua segurança em primeiro lugar</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="" class="active">Mapa</a>
+            <a href="#">saude</a>
+            <a href="chat.html">chat</a>
+        </nav>
+
+        <div class="buttons">
+            <button class="btn-outline">Entrar</button>
+            <button class="btn-primary">Cadastrar</button>
+        </div>
+    </header>
+
+    <section class="top">
+        <h1>Mapa de <span>Segurança</span></h1>
+        <p>Visualize as áreas monitoradas em tempo real e encontre o posto mais próximo.</p>
+
+        <div class="search-box">
+            <input type="text" placeholder="Buscar endereço...">
+            <select>
+      <option>Todas as áreas</option>
+    </select>
+        </div>
+    </section>
+
+    <section class="main">
+
+        <!-- MAPA -->
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18..." loading="lazy">
+    </iframe>
+
+            <div class="map-badge">
+                <h3>Localização atual</h3>
+                <p>Você está aqui</p>
+            </div>
+        </div>
+
+        <!-- LATERAL -->
+        <div class="side">
+            <div class="card">
+                <h3>Posto mais próximo</h3>
+
+                <div class="place">
+                    <div class="img"></div>
+                    <div>
+                        <strong>Posto Centro</strong>
+                        <p>Av. Brasil, 1234</p>
+                        <span>Aberto 24h</span>
+                    </div>
+                </div>
+
+                <h4>Serviços</h4>
+                <ul>
+                    <li>Atendimento 24h</li>
+                    <li>Monitoramento</li>
+                    <li>Apoio ao cidadão</li>
+                </ul>
+
+                <button class="btn-primary full">Como chegar</button>
+                <button class="btn-link">Ver todos os postos</button>
+            </div>
+
+            <div class="stats">
+                <div>
+                    <h3>12</h3>
+                    <p>Postos</p>
+                </div>
+                <div>
+                    <h3>358</h3>
+                    <p>Câmeras</p>
+                </div>
+                <div>
+                    <h3>24h</h3>
+                    <p>Monitoramento</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
