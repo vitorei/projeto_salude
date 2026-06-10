@@ -237,6 +237,25 @@ nav a:hover::after {
     animation: popIn 0.8s ease;
 }
 
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    border-radius: 8px;
+    /* opcional: deixa mais suave */
+    transition: .3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
 .chat-top {
     padding: 20px;
     border-bottom: 1px solid #1f2937;

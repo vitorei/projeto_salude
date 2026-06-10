@@ -27,7 +27,7 @@
             <a href="index.html">Início</a>
             <a href="">Serviços</a>
             <a href="">Mapa</a>
-            <a href="">Contato</a>
+            <a href="">saude</a>
         </nav>
 
         <div class="header-buttons">
@@ -41,7 +41,10 @@
 
         <div class="left-login">
 
-            <span>Bem-vindo de volta!</span>
+            <h1 class="typing">
+                <span id="texto"></span>
+                <span class="cursor">|</span>
+            </h1>
 
             <h1>
                 Acesse sua conta
@@ -88,9 +91,7 @@
 
             <h1>Entrar na conta</h1>
 
-            <p>
-                Preencha seus dados para continuar
-            </p>
+            <p>Preencha seus dados para continuar</p>
 
             <form>
 
@@ -124,7 +125,6 @@
             <div class="social-login">
 
                 <button>Google</button>
-
                 <button>Microsoft</button>
 
             </div>
@@ -137,6 +137,24 @@
         </div>
 
     </section>
+
+    <!-- ✅ JAVASCRIPT DO EFEITO -->
+    <script>
+        const texto = "Bem-vindo de volta! Saúde Tiradentes";
+        const el = document.getElementById("texto");
+
+        let i = 0;
+
+        function digitar() {
+            if (i < texto.length) {
+                el.innerHTML += texto.charAt(i);
+                i++;
+                setTimeout(digitar, 55);
+            }
+        }
+
+        digitar();
+    </script>
 
 </body>
 
